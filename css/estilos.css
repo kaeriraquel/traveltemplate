@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans";
+  }
+.container{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 60px;
+}
+header ul{
+	list-style: none;
+}
+header .menu{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; 
+    padding-bottom: 0;
+    margin-bottom: 0%;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li i{
+    font-size: 40px;
+}
+.menu li h2{
+   font-weight: 650;
+   text-align: center;
+   padding: 0 400px;
+}
+/* AQUI TERMINA EL HEADER  */
+.contenedor-revista{
+  position: relative;
+  width: 100%;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.card{
+   width: 100%;
+  position: relative;
+}
+.fecha,
+.issue{
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: 20px;
+    font-weight: 700;
+}
+.issue {
+    font-size: 120px;
+    left: -260px;
+    top: 20%;
+    color: #e6e6e6;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 60px;
+    height: 80px;
+    width: auto;
+    opacity: 0;
+
+  }
+
+.card .imagenes{
+  position: relative;
+}
+.card .imagenes .logo1{
+    position: relative;
+    height: 400px;
+  background: url(../img/imagen1.jpg)center bottom no-repeat;
+  background-size: cover;
+}
+
+.card .imagen2 .image{
+    position: relative;
+    height: 360px;
+  background: url(../img/imagen2.jpg)right bottom no-repeat;
+  background-size: cover;
+  box-shadow: none;
+}
+.card .imagen3 .image{
+    position: relative;
+    height: 320px;
+  background: url(../img/imagen3.jpg)right bottom no-repeat;
+  background-size: cover;
+  box-shadow: none;
+}
+.card .imagen4 .image{
+    position: relative;
+    height: 280px;
+  background: url(../img/imagen4.jpg)right bottom no-repeat;
+  background-size: cover;
+  box-shadow: none;
+}
+.card .imagen1 {
+    width: 60%;
+    left: 30%;
+  }
+/* .card .imagen1 .numero-imagen{
+} */
+.card .imagen1 .image{
+  z-index: 10;
+}
+.numero-imagen{
+
+  margin-right: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a2a1a1;
+  display: inline-block;
+  padding: 10px 0;
+}
+.card .imagen1 .numero-imagen span{
+  font-size: 40px;
+}
+.city{
+  font-size: 22px;
+  font-weight: 650;
+  color: #e6e4e4;
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+.imagen1 .city{
+  bottom: -10px;
+  right: -60px;
+}
+.imagen2 .city {
+  opacity: 0;
+  bottom: -90px;
+  right: -60px;
+}
+.imagen3 .city {
+  opacity: 0;
+  bottom: -55px;
+  right: -25px;
+}
+.imagen4 .city {
+  opacity: 0;
+  bottom: -63px;
+  right: -35px;
+}
+.card .imagen2,
+.card .imagen3,
+.card .imagen4 {
+  position: absolute;
+  width: 50%;
+  top: 20px;
+  left: 50%;
+  z-index: 8;
+}
+.card .imagen3 {
+    top: 40px;
+    z-index: 7;
+  }
+  
+  .card .imagen4 {
+    top: 60px;
+    z-index: 6;
+  }
+  .ease-out4 {
+    transition: 0.7s ease-out all;
+  }
+
+.contenedor-revista:hover .imagen1 {
+    left: 15%;
+  }
+  .contenedor-revista:hover .fecha {
+    left: 3%;
+  }
+  .contenedor-revista:hover .issue {
+    left: -200px;
+  }
+  .contenedor-revista:hover .logo{
+    opacity: 1;
+  }
+  .contenedor-revista:hover .logo1 {
+    cursor: pointer;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.3);
+  }
+  .contenedor-revista:hover .numero-imagen {
+    color: #e6e6e6;
+  }
+  .contenedor-revista:hover .imagen2 {
+    left: 62%;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  }
+  .contenedor-revista .imagen2:hover{
+    left: 65%;
+  }
+  .contenedor-revista:hover .imagen3 {
+    left: 73%;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+  }
+  .contenedor-revista .imagen3:hover{
+    left: 76%;
+  }
+  .contenedor-revista:hover .imagen4{
+    left: 83%;
+    box-shadow: 0px 20px 20px rgb(0, 0, 0,0.1);
+  }
+  .contenedor-revista .imagen4:hover{
+    left:86%;
+  }
+
+  .contenedor-revista:hover .city{
+    opacity: 1;
+  }
+  .contenedor-revista .logo1:hover ~ .city{
+    color: #7f7a98;
+  }
+  /* .contenedor-revista .imagen1:hover .city{
+    color:  #7f7a98;  
+  } */
+  .contenedor-revista .imagen2:hover .city{
+    color:  #7f7a98;
+  }
+  .contenedor-revista .imagen3:hover .city{
+    color:  #7f7a98;
+  }
+  .contenedor-revista .imagen4:hover .city{
+    color:  #7f7a98;
+  }
+
+.revista{
+  display: none;
+  background-image: url('../img/imagen1.jpg');
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+}
+.revista-over{
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cuerpo-wrapper-revista{
+ padding: 0;
+ margin: 0;
+ max-width: 100%;
+}
+.fecha-revista{
+  color: #e6e4e4;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  height: calc(100vh - 100px);
+  width: 40px;
+  border-right: 2px solid #fff;
+}
+.fecha-revista span{
+  margin-top: 47vh;
+  margin-left: -80px;
+  width: 200px;
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 20px;
+  font-weight: 700;
+}
+.revista-cabecera{
+  color: #e6e4e4;
+  display: inline-block;
+  width: 100%;
+  padding: 100px 15%;
+} 
+.revista-cabecera h1{
+ float: left;
+}
+.revista-cabecera i{
+  font-size: 40px !important;
+  float: right;
+}
+.title{
+  width: 60%;
+  padding: 15px 15%;
+  float:left;
+  color: #e6e4e4;
+}
+.title h2{
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.title span{
+  font-size: 30px;
+}
+.title span::after{
+  content: '';
+  display: block;
+  background-color: red;
+  height: 4px;
+  width: 60px;
+  margin-top: 50px;
+}
+.author h2{
+  float:left;
+  width: 60%;
+  padding: 20px 15%;
+  color: #afafaf;
+  font-size: 17px;
+  font-style: italic;
+}
+/* .izq{
+  float: left;
+  width: 60%;
+  max-width: 540px;
+  color: #fff;
+} */
+/* .author{
+  display: flex;
+} */
+.author ul{
+  float: left;
+  width: 60%;
+  padding: 0 15%;
+}
+.author li span{
+  color: #969696;
+  list-style: none;
+  font-size: 15px;
+}
+.author li i{
+  color: #e6e4e4;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contenido-card{
+  display: block;
+  width: 400px;
+  float: right;
+  display: block;
+  margin-right: 300px;
+  margin-top: -45%;
+  transition: opacity 0.3s ease-in-out;
+}
+.articulo{
+  /* float: right; */
+  /* width: 40%; */
+  display: block;
+  color: #e6e6e6;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-body h2{
+font-size: 30px;
+}
+.card-body p{
+  padding-top: 10px;
+  font-size: 13px;
+}
+.articulo i{
+  font-size: 30px;
+  display: block;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 5px;
+    
+}
+/* .articulo:hover{
+  box-shadow: 0px 0px 10px 10px #333 inset;
+  border: 1px solid white;
+  cursor: pointer;
+} */
+/* .articulo:hover{
+  box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 30px white;
+} */
+.line-red:after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 50px;
+  background: red;
+  margin: 0 auto;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+.estilo-card:hover{
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3) inset;
+  text-shadow: inset 30px 0px 30px rgba(0, 0, 0, 1);
+  transform: scale(0.9);
+  transition: 0.4s ease-out all;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+
+/* AQUI EMPIEZA EL ESTILO DEL TRIANGULO XD */
+ .arrow-right{
+/* ------------------------------------------------------------triangulo */
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 568px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  text-align: center;
+  border-width: 0 0 100vh 200px;
+  border-color: transparent transparent #ffffff transparent;
+  transition: opacity 0.3s ease-in-out;
+} 
+.contenido-triangulo{
+  display: none;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  padding: 0 0px;
+  background: #fff;
+  transition: opacity 0.3s ease-in-out;
+}
+.fade{
+  display: block;
+  /* eJEMPLO-------------------------------------------ejemplo */
+}
+.transicion{
+  transition: 0.3s ease-out all;
+}
+
+.cuerpo-triangulo{
+  padding: 40px 60px;
+  margin-bottom: 3em;
+}
+.imagen-triangulo img{
+  max-width: 100%;
+  width: 620px;
+  height: 320px;
+  margin-top: 40px;
+}
+.texto-centrado{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.encabezado-triangulo i{
+font-size: 40px;
+color: gray;
+}
+.encabezado-triangulo span{
+  display: block;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  color: #3d3c3c;
+}
+
+.titulo-triangulo{
+  font-size: 50px;
+  font-weight: bold;
+}
+.bi-heart-fill{
+  color: red;
+  font-size: 13px;
+}
+.text1 {
+  font-weight: bold;
+  font-size: 17px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text2{
+  font-size: 17px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #3d3c3c;
+}
+.texto-triangulo{
+  font-size: 17px;
+}
+.cita{
+  font-size: 19px;
+  font-style: italic;
+  color: #9f9f9f;
+  border-left: 3px solid #9f9f9f;
+  padding-left: 20px;
+
+}
+.texto-left{
+padding-right: 20px;
+}
+
+footer li{
+list-style: none;
+display: inline-flex;
+
+}
+
+.redes i{
+margin: 0 50px;
+font-size: 30px;
+color: #e0e0e0;
+padding: 0 15px;
+
+}
+.redes i:hover{
+color: black;
+transition: 0.6s ease-out all;
+}
+.boton button{
+ /*----------------------------------------------------------------boton */
+display: none;
+border-radius: 50% ;
+width: 90px;
+height:90px;
+font-size: 16px;
+font-weight:bold ;
+color:  #a0a0a0;
+background: #ffffff;
+border: 1px solid #a0a0a0;
+position: fixed;
+top: 600px;
+left: 670px;
+z-index: 1;
+transition: opacity 0.3s ease-in-out;
+}
+.boton button:hover{
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+  transition:  0.2s ease-out all;
+}
+
+.headerFixed{
+
+top: 0;
+position: fixed;
+float: left;
+background-color: #fff;
+padding: 8px 20px;
+width: 100%;
+display: flex;
+
+}
+.headerFixed span{
+display: inline-block;
+align-self: center;
+padding-left: 15px;
+} 
+.footerFixed{
+position: fixed;
+bottom: 0;
+background-color: #fff;
+padding: 8px 20px;
+
+}
+/* clase creada en javascript para mover a la izquiera el titulo al mostrarse el contenedor del triangulo owo */
+.moverizquierda{ 
+ margin-right: 200px;
+ margin-top: -150px;
+}
+.moverizquierda .title h2{
+  font-size: 92px;
+}
